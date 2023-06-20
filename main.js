@@ -46,7 +46,7 @@ navToggle.addEventListener("click", () => {
 
    /*  --CONTACT FORM--- */
 
-   $(document).ready(function(){
+$(document).ready(function(){
 	$('a[href^="#"]').on('click',function (e) {
             e.preventDefault();
 

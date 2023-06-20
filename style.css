@@ -11,7 +11,6 @@
 body {
     scroll-behavior: smooth;
     font-family: Roboto Slab;
-    padding: 90px 20px 0;
     background-color: #000000;
 }
 
@@ -23,7 +22,6 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-    width: 100%;
     text-align: center;
     padding-top: 0px;
     z-index: 1;
@@ -96,6 +94,12 @@ body {
     text-decoration: none;
 }
 
+.fa {
+    font-size: 30px;
+    color:#fff;
+}
+
+
 /* TOGGLE */
 
 .nav-toggle {
@@ -111,10 +115,6 @@ body {
 
 /* HEADER DIV */
 
-#wrapper1 {
-    text-align: center;
-}
-
 h1 {
     font-size: 80px;
     font-family: Oswald;
@@ -122,6 +122,12 @@ h1 {
     line-height: 80px;
     font-weight: 500;
     word-wrap: break-word;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 30px;
 }
 
 h4 {
@@ -143,9 +149,40 @@ h4 {
     align-items: center;
     background: border-box;
 }
+
 .welcome{
     color:#409FFF;
     font-weight: 800;
+}
+
+/* SCROLL DOWN ARROW */
+
+.fa-angle-double-down {
+    vertical-align: 8%;
+} 
+
+.fa-angle-double-down:hover{
+    color: #409FFF;
+}
+
+.fa {
+    font-size: 30px;
+    color:#fff;
+}
+
+    /* SECTION 1 WRAPPER */
+
+#wrapper1 {
+    font-family: Roboto Slab;
+    padding: 0;
+    margin: 0;
+    color: white;
+    position: center;
+    background: url('https://th.bing.com/th/id/R.a1dc3bf797de91fd9a97bd398a30b0e5?rik=%2f8Y0eZTdgB7p1w&riu=http%3a%2f%2fwww.publicdomainpictures.net%2fpictures%2f190000%2fvelka%2fblack-background-1468370534d5s.jpg&ehk=eA4xvYoBRxONq7xR5ZHrfYPCHj3xXDirdaxRntUp3RI%3d&risl=&pid=ImgRaw&r=0');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
 }
 
 #wrapper1 a {
@@ -160,34 +197,6 @@ h4 {
     font-size: 50px;
     color:#409FFF;
 }
-
-/* SCROLL DOWN ARROW */
-
-.fa-angle-double-down {
-    vertical-align: 8%;
-} 
-
-.fa-angle-double-down:hover{
-    color: #409FFF;
-}
-.fa {
-    font-size: 30px;
-    color:#fff;
-}
-
-    /* SECTION 1 WRAPPER */
-
-    #wrapper1 {
-        font-family: Roboto Slab;
-        padding: 0;
-        margin: 0;
-        color: white;
-        position: center;
-        background: url('https://th.bing.com/th/id/R.a1dc3bf797de91fd9a97bd398a30b0e5?rik=%2f8Y0eZTdgB7p1w&riu=http%3a%2f%2fwww.publicdomainpictures.net%2fpictures%2f190000%2fvelka%2fblack-background-1468370534d5s.jpg&ehk=eA4xvYoBRxONq7xR5ZHrfYPCHj3xXDirdaxRntUp3RI%3d&risl=&pid=ImgRaw&r=0');
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100vh;
-    }
 
 /* ABOUT ME WRAPPER */
 
@@ -204,8 +213,8 @@ h4 {
     flex-direction: column;
 }
 
-.about__title{
-    font-size: 20px;
+.about_title{
+    font-size: 35px;
     display: grid;
     text-align: center;
 }
@@ -237,7 +246,7 @@ h4 {
 /* INTRO SECTION––––––––––––––––––––––––––––––––––––––––––– */
 
 .intro {
-    background: #22181c;
+    background: #000000;
     padding: 100px 0;
 }
 
@@ -246,10 +255,6 @@ h4 {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-}
-
-h1 {
-    font-size: 2.5rem;
 }
 
 /* ---TIMELINE---- */
@@ -261,7 +266,7 @@ h1 {
 }
 
 .timeline ul {
-    background: #22181c;
+    background: #000000;
     padding: 50px 0;
 }
 
@@ -292,6 +297,7 @@ h1 {
     bottom: 0;
     width: 400px;
     padding: 15px;
+    color:#fff;
     background: #409FFF;
 }
 
@@ -432,12 +438,6 @@ time {
     padding: 20px;
 }
 
-h2 {
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 30px;
-}
-
 form {
     display: flex;
     flex-direction: column;
@@ -506,76 +506,6 @@ input[type="submit"]:hover {
     text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: Roboto Slab;
-    margin-bottom: 14px
-    }
-
-h1 {
-    font-size: 80px;
-    font-family: Oswald;
-    letter-spacing: 3px;
-    line-height: 80px;
-    font-weight: 500;
-    word-wrap: break-word;
-}
-
-h2 {
-    font-size: 32px;
-    line-height: 36px;
-}
-
-h3 {
-    font-size: 26px;
-    line-height: 29px;
-}
-
-h4 {
-    font-size: 20px;
-    line-height: 25px;
-}
-
-h5 {
-    font-size: 16px;
-    line-height: 21px;
-}
-
-h6 {
-    font-size: 15px;
-}
-
-.logo {
-    color: #ffffff;
-    padding-top: 8px;
-    padding-left: 75px;
-    font-size: 25px;
-    line-height: 18px;
-}
-
-.logo a {
-    color: #ffffff;
-    padding-left: 75px;
-    font-size: 25px;
-    line-height: 18px;
-}
-
-.sublogo {
-    color: #ffffff;
-    padding-left: 75px;
-    font-size: 11px;
-    font-weight: 100;
-    text-align: left;
-    letter-spacing: 5px;
-}
-
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
-}
-
 /* SCROLL DOWN BUTTON */
 
 .btn-circle {
@@ -599,27 +529,27 @@ h6 {
     
 }
 
- a .social {
+a .social {
     color: #55606A;
+    font-size: 30px;
+    margin-right: 10px;
 }
 
 .social:hover {
-    color: black;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
 
-.fa-facebook:hover {
+i.fa-brands.fa-facebook-f.social:hover {
     color: #3b5998;
 }
 
-
-.fa-twitter:hover {
+i.fa-brands.fa-twitter.social:hover{
     color: #48c4d2;
 }
 
-.fa-instagram:hover {
+i.fa-brands.fa-instagram.social:hover{
     color: #fb913f;
 }
 
@@ -627,12 +557,16 @@ h6 {
     color: red;
 }
 
-.fa-linkedin:hover{
-    color: rgb(55, 55, 248);
+i.fa-brands.fa-linkedin-in.social:hover{
+    color: rgb(42, 42, 232);
 }
 
 .fa-phone:hover{
     color: rgb(144, 241, 144);
+}
+
+.copyright{
+    margin-top: 20px;
 }
 
 /* MOBILE */
@@ -651,6 +585,10 @@ h6 {
         padding: 0 20px;
         line-height: 60px;
     }
+    
+    .sublogo{
+        padding-left: 25px;
+    }
 
     .nav-menu {
         flex-direction: column;
@@ -660,11 +598,9 @@ h6 {
         position: fixed;
         top: 60px;
         width: 100%;
-        padding: 20px 0;
-
+        padding: 20px 0; 
         height: calc(100% - 60px);
         overflow-y: auto;
-
         left: 100%;
         transition: left 0.3s;
     }
@@ -732,16 +668,24 @@ h6 {
     .timeline ul li {
         margin-left: 20px;
     }
+
     .timeline ul li div {
         width: calc(100vw - 91px);
     }
+
     .timeline ul li:nth-child(even) div {
         left: 45px;
     }
+
     .timeline ul li:nth-child(even) div::before {
         left: -15px;
         border-width: 8px 16px 8px 0;
         border-color: transparent #409FFF transparent transparent;
     }
+
+    .main-content{
+        width: auto;
+    }
 }
+
 

@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-
     <script defer src="main.js"></script>
+
     <link rel="stylesheet" href="style.css">
 
     <title>OpenSourceJam</title>
@@ -20,10 +19,11 @@
 
 <body>
     <!-- START HEADER -->
+    
     <header class="navbar">
         <nav class="nav">
             <div>
-                <a href="#" class="logo">OpenSourceJam</a>
+                <a href="/" class="logo">OpenSourceJam</a>
                 <p class="sublogo">VISUALS</p>
             </div>
             <button class="nav-toggle" aria-label="Abrir menú">
@@ -38,7 +38,7 @@
                     <a href="#linetime" class="nav-menu-link nav-link">L]NE T]ME</a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="#footer" class="nav-menu-link nav-link">CONTACT</a>
+                    <a href="#contact" class="nav-menu-link nav-link">CONTACT</a>
                 </li>
             </ul>
         </nav>
@@ -54,11 +54,13 @@
         </div>
     </div>
     </div>
+
     <!-- END HEADER -->
 
     <!-- START MAIN -->
+
     <div id="aboutme" class="container-fluid">
-        <div class="about__title" style="padding-top: 50px">
+        <div class="about__title" style="padding-top: 70px">
             <h2 class="about_title">ABOUT ME</h2>
         </div>
         <div class="about_box">
@@ -67,12 +69,10 @@
                     programmer,
                     and my passion lies in technology and programming.</p>
                     
-
                 <p>In Xerion, we have achieved advanced levels in cosmic software development. My work focuses on
                     optimizing
                     spaceship systems and communication. I also enjoy composing music and designing interactive
                     holographs.</p>
-
 
                 <p>I'm thrilled to continue exploring and advancing science and technology on my planet and beyond.
                     Occasionally, I take a stroll through other worlds in search of junior talent.</p>
@@ -84,12 +84,10 @@
         </div>
     </div>
 
-    <!-- END MAIN -->
-
-    <!-- START TIMELINE -->
-    <section class="intro">
+    <!--TIMELINE -->
+    <section id="linetime" class="intro">
         <div class="container">
-            <h1 class="timel">Timeline &darr;</h1>
+            <h1 class="timel">T]ME L]NE &darr;</h1>
         </div>
         </section>
         <section class="timeline">
@@ -151,7 +149,7 @@
     </section>
 
     <!-- contact form -->
-    <div class="main-content">
+    <div id="contact" class="main-content">
         <h2>Contact Me! </h2>
 
         <form method="post" action="javascript:void(0);" onsubmit="submitForm()">
@@ -165,23 +163,31 @@
             <textarea id="message" name="message" placeholder="Tell me how I can help you.." required></textarea>
 
             <input type="checkbox" id="terms" name="terms" required>
-            <label for="terms">I have read and accept<a href="http://www.example.com/privacy-policy">the privacy policy</a>.</label>
+            <label for="terms">I have read and accept <a href="http://www.example.com/privacy-policy">the privacy policy</a>.</label>
 
             <input type="submit" value="Send">
         </form>
         <div id="success-message"></div>
     </div>
+
+    <!-- END MAIN -->
     
     <!-- START FOOTER -->
+
     <div id="footer" class="container-fluid">
-            <a class="social" href="https://www.facebook.com/interacso" target="blank" class="icons-btn facebook-icn"><i class="fa fa-facebook"></i></a>
-            <a class="social" href="https://twitter.com/interacso" target="blank" class="icons-btn twitter-icn"><i class="fa fa-twitter"></i></a>
-            <a class="social" href="https://www.instagram.com/interacso_/" target="blank" class="icons-btn instagram-icn"><i class="fa fa-instagram"></i></a>
-            <a class="social" href="mailto:info@opensourcejam.com" target="_blank" class="icons-btn email-icn"><i class="fa fa-envelope"></i></a>
-            <a class="social" href="https://www.linkedin.com/company/interacso/" target="_blank" class="icons-btn linkedin-icn"><i class="fa fa-linkedin"></i></a>
-            <a class="social" href="tel:+1234567890" class="icons-btn phone-icn"><i class="fa fa-phone"></i></a>
-            <br><br>
-            <p>COPYRIGHT © 2023 OpenSourceJam</p>
+            <a class="social" href="https://www.facebook.com/interacso" target="_blank"><i class="fa-brands fa-facebook-f social"></i></a>
+
+            <a class="social" href="https://twitter.com/interacso" target="_blank"><i class="fa-brands fa-twitter social"></i></a>
+
+            <a class="social" href="https://www.instagram.com/interacso_/" target="_blank"><i class="fa-brands fa-instagram social"></i></a>
+
+            <a class="social" href="mailto:info@opensourcejam.com" target="_blank"><i class="fa fa-envelope social"></i></a>
+
+            <a class="social" href="https://www.linkedin.com/company/interacso/" target="_blank"><i class="fa-brands fa-linkedin-in social"></i></a>
+
+            <a class="social" href="tel:+1234567890"><i class="fa fa-phone social"></i></a>
+            
+            <p class="copyright">COPYRIGHT © 2023 OpenSourceJam</p>
 
     </div>
 
