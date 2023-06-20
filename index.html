@@ -4,18 +4,21 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+
     <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
 
     <title>OpenSourceJam</title>
 </head>
 
 <body>
-    <!-- ― Hello World! &#x1F609; -->
-
     <!-- START HEADER -->
     <header class="navbar">
         <nav class="nav">
@@ -83,7 +86,104 @@
 
     <!-- END MAIN -->
 
-    <!-- START FOOTER  -->
+    <!-- START TIMELINE -->
+    <section class="intro">
+        <div class="container">
+            <h1 class="timel">Timeline &darr;</h1>
+        </div>
+        </section>
+        <section class="timeline">
+        <ul>
+            <li>
+                <div>
+                    <time>June 14, 2023</time> "I embark on my journey to Earth in search of programmers from other worlds who break the norm and the codes."
+                </div>
+            </li>
+            <li>
+                <div>
+                    <time>June 16, 2023</time> "I have arrived at a strange place called "Google" where "Interacso" has set up an OpenSourceJam full of amazing programmers... this looks very promising!"
+                </div>
+            </li>
+            <li>
+                <div>
+                    <time>June 17, 2023</time> "The programmers have divided into groups and have started working, looking for 'issues' in other programmers code to improve it, fix it... I'm still not clear on what they're doing, but this is definitely collaborative work!"
+                </div>
+            </li>
+            <li>
+                <div>
+                    <time>June 18, 2023</time> "The programmers from different teams are starting to connect and share information through their computers... I don't know why they don't use their minds, although considering what they are doing, it might be to maintain their mental capacity for searching and resolving issues."
+                </div>
+            </li>
+            <li>
+                <div>
+                    <time>June 19, 2023</time> "The programmers continue tirelessly resolving issues and connecting with each other to share their experiences... it's incredible what these humans are doing."
+                </div>
+            </li>
+            <li>
+                <div>
+                    <time>June 20, 2023</time> "I don't know what's happening with the programmers today, in every team, the phrase 'we're running out of time' keeps repeating... maybe it's the way of compiling code on Earth."
+                </div>
+            </li>
+            <li>
+                <div>
+                    <time>June 21, 2023</time> Here's the translation of your phrase into English:
+
+                    "Now I understand! The programmers had to submit their work as if to a higher mind... The programmers took a breath once their work was submitted... And now the programmers who, on June 16th, were dressed as "Interacso", with one even carrying a colleague from another galaxy in their arms, begin to review the submissions and repeat the phrase 'come on, we have little time!'... Humans definitely need to reprogram their concept of time."
+                </div>
+            </li>
+            <li>
+                <div>
+                    <time>June 22, 2023</time> Here's the translation of your phrase into English:
+
+                    "Now everything makes sense! The programmers were in a test to demonstrate their skills not only in programming but also as teammates within their own team and with the rest of the participants. It's the Interacso humans who are responsible for choosing the winning team... I wouldn't want to be in their position because I have seen the work that each team has done, and even with my mind, which is superior light-years ahead of the human mind, I can't come up with a winning team by inputting variables into my supercomputer..."
+                </div>
+            </li>
+            <li>
+                <div>
+                    <time>June 23, 2023</time> "Today has been the big day, both the participating programmers and the responsible humans of the event have experienced nerves, joy, and above all, a lot of excitement throughout the whole experience... They have had a tough job selecting the winning team, as it seems there can only be one... Judging by the faces of the humans in the winning team, they must have received a great prize, but extracting data from their subconscious minds, everyone feels like winners because of the experience lived."
+                </div>
+            </li>
+            <li>
+                <div>
+                    <time>June 26, 2023</time> "After these days at the OpenSourceJam, I have found a very interesting group of programmers who meet the requirements I am looking for, so I have a long task ahead on Earth to recruit them all... Today, I will take a day off... I will continue later..."
+                </div>
+        </ul>
+    </section>
+
+    <!-- contact form -->
+    <div class="main-content">
+        <h2>Contact Me! </h2>
+
+        <form method="post" action="javascript:void(0);" onsubmit="submitForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name..." required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@dominio.com" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Tell me how I can help you.." required></textarea>
+
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I have read and accept<a href="http://www.example.com/privacy-policy">the privacy policy</a>.</label>
+
+            <input type="submit" value="Send">
+        </form>
+        <div id="success-message"></div>
+    </div>
+    
+    <!-- START FOOTER -->
+    <div id="footer" class="container-fluid">
+            <a class="social" href="https://www.facebook.com/interacso" target="blank" class="icons-btn facebook-icn"><i class="fa fa-facebook"></i></a>
+            <a class="social" href="https://twitter.com/interacso" target="blank" class="icons-btn twitter-icn"><i class="fa fa-twitter"></i></a>
+            <a class="social" href="https://www.instagram.com/interacso_/" target="blank" class="icons-btn instagram-icn"><i class="fa fa-instagram"></i></a>
+            <a class="social" href="mailto:info@opensourcejam.com" target="_blank" class="icons-btn email-icn"><i class="fa fa-envelope"></i></a>
+            <a class="social" href="https://www.linkedin.com/company/interacso/" target="_blank" class="icons-btn linkedin-icn"><i class="fa fa-linkedin"></i></a>
+            <a class="social" href="tel:+1234567890" class="icons-btn phone-icn"><i class="fa fa-phone"></i></a>
+            <br><br>
+            <p>COPYRIGHT © 2023 OpenSourceJam</p>
+
+    </div>
 
     <!-- END FOOTER -->
 </body>
