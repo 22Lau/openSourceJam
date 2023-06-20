@@ -5,6 +5,7 @@
 
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -32,6 +33,10 @@ body {
     /* TRANSPARENCY */
     background-color: rgba(1, 1, 1, 0.7);
     color: rgba(1, 1, 1, 0.7);
+}
+
+.navbar-container{
+    overflow: hidden;
 }
 
 .nav {
@@ -258,6 +263,7 @@ h4 {
 .intro {
     background: #000000;
     padding: 100px 0;
+    overflow: hidden;
 }
 
 .container {
@@ -269,16 +275,26 @@ h4 {
 
 /* ---TIMELINE---- */
 
+section.timeline {
+    overflow: hidden;
+}
+section#linetime {
+    overflow: hidden;
+}
+
 .timel {
     font-size: 2.5rem;
     color: #f9fafb;
     font-family: Roboto Slab;
+    overflow: hidden;
 }
 
 .timeline ul {
     background: #000000;
     padding: 50px 0;
+    overflow: hidden;
 }
+
 
 .timeline ul li {
     list-style-type: none;
@@ -721,5 +737,4 @@ i.fa-brands.fa-linkedin-in.social:hover{
         width: auto;
     }
 }
-
 
