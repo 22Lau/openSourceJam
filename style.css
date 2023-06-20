@@ -131,12 +131,17 @@ h2 {
 }
 
 h4 {
+    text-align: center;
+    padding-bottom: 200px;
+    opacity: 0;
+    transform: translateY(-80px);
+    transition: opacity 1s ease-in-out 0.5s, transform 1s ease-in-out 0.5s;
+    font-weight: bold;
     display: block;
-    margin-block-start: 1.33em;
-    margin-block-end: 1.33em;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    font-weight: bold;
 }
 
 #welcome {
@@ -150,9 +155,14 @@ h4 {
     background: border-box;
 }
 
-.welcome{
-    color:#409FFF;
+.welcome {
+    text-align: center;
+    font-size: 10rem;
+    color: #409fff;
     font-weight: 800;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
 /* SCROLL DOWN ARROW */

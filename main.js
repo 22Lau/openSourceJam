@@ -11,6 +11,26 @@ navToggle.addEventListener("click", () => {
     }
 });
 
+/* ---WELCOME--- */
+
+function animateEntry() {
+    var welcome = document.querySelector('.welcome');
+    var h4 = document.querySelector('h4');
+
+    welcome.style.opacity = '1';
+    welcome.style.transform = 'translateY(0)';
+
+    h4.style.opacity = '1';
+    h4.style.transform = 'translateY(0)';
+}
+
+// Ejecutar la animación cuando la página haya cargado completamente
+window.addEventListener('load', function() {
+    animateEntry();
+});
+
+
+
 /* ----TIMELINE----- */
 
 (function () {
@@ -95,9 +115,9 @@ window.addEventListener('load', () => {
         });
     });
 
-
+/* ----STARS---- */
     const starCount = 150; 
-const container = document.getElementById('stars');
+    const container = document.getElementById('stars');
 
 
     for (let i = 0; i < starCount; i++) {
@@ -130,4 +150,6 @@ const container = document.getElementById('stars');
     window.addEventListener('resize', animateStars);
 
     animateStars();
+
+
 
