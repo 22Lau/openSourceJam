@@ -94,3 +94,40 @@ window.addEventListener('load', () => {
         easing: 'easeOutExpo'
         });
     });
+
+
+    const starCount = 150; 
+const container = document.getElementById('stars');
+
+
+    for (let i = 0; i < starCount; i++) {
+    const star = document.createElement('div');
+    star.className = 'star';
+    container.appendChild(star);
+    }
+
+    
+    function animateStars() {
+    const stars = document.getElementsByClassName('star');
+    const containerWidth = container.offsetWidth;
+    const containerHeight = container.offsetHeight;
+
+    for (let i = 0; i < starCount; i++) {
+        const star = stars[i];
+        const x = Math.random() * containerWidth;
+        const y = Math.random() * containerHeight;
+        const duration = Math.random() * 25 + 15;
+        const size = Math.random() * 2 + 1;
+
+        star.style.left = x + 'px';
+        star.style.top = y + 'px';
+        star.style.animationDuration = duration + 's';
+        star.style.width = size + 'px';
+        star.style.height = size + 'px';
+    }
+    }
+
+    window.addEventListener('resize', animateStars);
+
+    animateStars();
+
